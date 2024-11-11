@@ -9,13 +9,13 @@ pipeline {
         IMAGE_NAME_CLIENT = 'bochramissaoui/mern-client'
     }
     stages {
-        stage('Checkout') {
-            steps {
-                git branch: 'main',
-                    url: 'git@github.com:BochraMissaoui12/tp2.git',
-                    credentialsId: 'git'
-            }
-        }
+        // stage('Checkout') {
+        //     steps {
+        //         git branch: 'main',
+        //             url: 'git@github.com:BochraMissaoui12/tp2.git',
+        //             credentialsId: 'git'
+        //     }
+        // }
         stage('Build Server Image') {
             steps {
                 dir('server') {
