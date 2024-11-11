@@ -13,7 +13,7 @@ pipeline {
             steps {
                 git branch: 'main',
                     url: 'git@github.com:BochraMissaoui12/tp2.git',
-                    credentialsId: 'git'
+                    credentialsId: 'Gitlab_ssh'
             }
         }
         stage('Build Server Image') {
