@@ -12,7 +12,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 git branch: 'main',
-                    url: 'git@gitlab.com:project.git',
+                    url: 'git@github.com:BochraMissaoui12/tp2.git',
                     credentialsId: 'Gitlab_ssh'
             }
         }
